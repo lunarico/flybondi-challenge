@@ -21,7 +21,7 @@ export const FlightsProvider = ({ children }) => {
 
   // Llamada a los datos del JSON
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/dataset.json`)
+    fetch(`${process.env.PUBLIC_URL}/flybondi-challenge/dataset.json`)
       .then((response) => response.json())
       .then((data) => setFlights(data))
       .catch(() => setError("Error cargando vuelos. Intenta más tarde."));
