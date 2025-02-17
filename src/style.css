@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+#header {
+    align-items: center;
+    display: flex;
+
+    img {
+        margin: 2em;
+        width: 10em;
+    }
+
+    h1 {
+        font-size: 2em;
+        font-weight: 600;
+        margin-left: 10%;
+    }
+}
+
+#selects {
+    border: 2px solid #fdbf0a;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0 2.5em 2em;
+    padding: 1em;
+    width: 60%;
+
+    div {
+        align-items: center;
+        display: flex;
+
+        i {
+            color: #fdbf0a;
+            font-size: 1.25em;
+            margin-right: .75em;
+        }
+    }
+
+    label {
+        color: #494846;
+        font-size: 1.125em;
+        font-weight: 500;
+        margin-right: .75em;
+        text-transform: uppercase;
+    }
+
+    select {
+        font-size: 1em;
+        padding: 0 .5em;
+    }
+}
+
+.buttons {
+    border-color: rgba(118, 118, 118, 0.3) ;
+    border-radius: .75em;
+    font-size: 1em;
+    margin: 0 0 2em 2em;
+    padding: .25em 1em;
+}
+
+.buttons:hover {
+    color: #fdbf0a;
+    cursor: pointer;
+}
+
+.buttons:disabled {
+    background-color: rgb(236, 236, 236);
+}
+
+.buttons:disabled:hover {
+    cursor: auto;
+}
+
+#flightList {
+    margin-left: 2em;
+
+    h2 {
+        color: #fdbf0a;
+        margin-bottom: .75em;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        width: 90%;
+
+        li {
+            align-items: center;
+            background-color: white;
+            border: 1px solid rgb(236, 236, 236);
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: .75em;
+            padding: 1.75em;
+            padding-bottom: 0;
+            width: 48%;
+
+            i {
+                margin-left: 2em;
+            }
+
+            p { 
+                font-size: 1.25em;
+                margin-bottom: 1em;
+            }
+
+            #price {
+                font-size: 1.75em;
+                margin-right: 10%;
+            }
+        }
+
+        li:hover {
+            background-color: #fdbf0a;
+            cursor: pointer;
+        }
+    }
+}
