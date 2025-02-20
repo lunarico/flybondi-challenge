@@ -54,13 +54,9 @@ body {
     }
 
     @media (max-width:768px) {
-        width: 95%;
-    }
-
-    @media (max-width:768px) {
-        display: block;
-        margin: 2em 0;
-        width: 100%;
+        flex-wrap: wrap;
+        margin: 2em;
+        width: 90%;
     }
 
 
@@ -154,10 +150,6 @@ body {
             padding: 1.75em;
             padding-bottom: 0;
             width: 48%;
-
-            @media (max-width:1280px) {
-                width: 50%;
-            }
 
             @media (max-width:1024px) {
                 padding: 1.125em;
